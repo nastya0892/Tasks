@@ -1,0 +1,18 @@
+package task_3;
+
+import java.util.Scanner;
+
+public class task_3 {
+    public static void main(String[] args) {
+        String name;
+        do {
+            Scanner in = new Scanner(System.in);
+            System.out.print("Input name: ");
+            name = in.nextLine();
+          
+        } while (((name.substring(0,1).equals("A")) ) == false);
+
+
+    }
+}
+
