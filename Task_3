@@ -9,10 +9,9 @@ public class task_3 {
             Scanner in = new Scanner(System.in);
             System.out.print("Input name: ");
             name = in.nextLine();
-          
-        } while (((name.substring(0,1).equals("A")) ) == false);
 
+        } while (((name.substring(0,1).equals("A")) ) == false);
+        System.out.println("You are the best!");
 
     }
 }
-
