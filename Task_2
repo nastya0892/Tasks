@@ -1,0 +1,35 @@
+package Task_2;
+
+import java.util.Scanner;
+
+public class Task_2 {
+    public static void main(String[] args) {
+
+        Scanner input = new Scanner(System.in); // Объявляем Scanner
+        System.out.println("Enter n array length: ");
+        int n = input.nextInt(); // Читаем с клавиатуры размер массива и записываем в size
+        System.out.println("Enter m array length: ");
+        int m = input.nextInt();
+        int[][] matrix;
+        matrix = new int[n][m];
+        System.out.println("Insert array elements:");
+        int a =0;
+int kol =0;
+        for (int i = 0; i < n; i++) {
+            for(int j = 0; j<m; j++) {
+                a = input.nextInt();
+                if ((a & 1) != 0) {
+                    matrix[i][j] = a;
+
+                }
+            }
+        }
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < m; j++) {
+                System.out.print(matrix[i][j]);
+            }
+        }
+
+
+    }
+}
